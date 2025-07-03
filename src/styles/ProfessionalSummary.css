@@ -1,0 +1,45 @@
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .professional-summary {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 2rem 2.5rem;
+    background: #f5f7fa;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0; /* start invisible for animation */
+  }
+  
+  .professional-summary h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #1e3a8a;
+    font-weight: 700;
+    font-size: 2.2rem;
+    letter-spacing: 1.2px;
+  }
+  
+  .professional-summary ul {
+    padding-left: 1.5rem;
+    list-style-type: disc;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #222;
+    margin: 0;
+  }
+  
+  .professional-summary li {
+    margin-bottom: 1rem;
+  }
+  

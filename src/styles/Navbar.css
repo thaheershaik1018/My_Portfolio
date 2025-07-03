@@ -1,0 +1,126 @@
+.navbar {
+    background-color: #222831; /* Darker, more modern charcoal */
+    height: 54px; /* Fixed height for consistency, ensure body padding-top matches */
+    padding: 0 25px; /* Adjusted padding (top/bottom 0 due to fixed height and align-items) */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2); /* Softer, slightly more pronounced shadow */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; /* Changed from center to allow menu icon on one side */
+    align-items: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This is fine for desktop */
+  }
+  
+  .navbar-links li {
+    margin: 0 15px;
+  }
+  
+  .navbar-links a {
+    color: #eeeeee; /* Slightly brighter off-white */
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 8px 12px; /* Add some padding for better hover effect */
+    border-radius: 4px; /* Rounded corners for hover effect */
+    transition: color 0.3s ease, background-color 0.3s ease;
+    letter-spacing: 0.5px; /* Subtle letter spacing */
+  }
+  
+  .navbar-links a:hover {
+    color: #00adb5; /* Vibrant teal for hover text */
+    background-color: #393e46; /* Subtle background on hover */
+  }
+  
+  .menu-icon {
+    display: none; /* Hidden by default, shown in media query */
+    cursor: pointer;
+    padding: 5px;
+  }
+  
+  .menu-icon__line {
+    width: 25px;
+    height: 3px;
+    background-color: #eeeeee; /* Match new link color */
+    margin: 5px 0;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hamburger animation to X */
+  .menu-icon__line.open:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .menu-icon__line.open:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-icon__line.open:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 0 20px; /* Slightly less padding on mobile if needed */
+    }
+  
+    .navbar-links {
+      display: flex; /* Keep flex for transitions, control visibility with opacity/transform */
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      top: 60px; /* Position below the navbar (matches navbar height) */
+      left: 0;
+      background-color: #222831; /* Match new navbar bg */
+      padding: 10px 0; /* Adjust padding */
+      box-shadow: 0 4px 6px rgba(0,0,0,0.25); /* Slightly stronger shadow for dropdown */
+      border-top: 1px solid #393e46; /* Match new hover bg for separator */
+  
+      opacity: 0;
+      transform: translateY(-10px); /* Start slightly above for slide-down effect */
+      visibility: hidden; /* Hide when not open, helps with accessibility */
+      transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s 0.3s; /* Delay visibility transition */
+      /* z-index: 999; /* Ensure it's below navbar if needed, but above page content */
+    }
+  
+    .navbar-links.open {
+      opacity: 1;
+      transform: translateY(0);
+      visibility: visible;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+  
+    .navbar-links li {
+      margin: 0; /* Remove default margin, control with link padding */
+      width: 100%;
+      text-align: center;
+    }
+  
+    .navbar-links a {
+      padding: 15px 20px; /* Larger padding for mobile touch targets */
+      display: block; /* Make the whole area clickable */
+      /* width: 100%; */
+      border-radius: 0; /* Full width, no radius needed here for individual links */
+    }
+    .navbar-links a:hover {
+      background-color: #00adb5; /* Brighter hover for mobile */
+      color: #222831; /* Contrast text color on hover */
+    }
+  
+    .menu-icon {
+      display: block; /* Show hamburger menu icon */
+      z-index: 1001; /* Ensure menu icon is clickable above the opening menu */
+    }
+  }
+  

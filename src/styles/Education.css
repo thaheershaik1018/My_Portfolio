@@ -1,0 +1,57 @@
+.education-section {
+    margin: 40px 0;
+    padding: 0 20px;
+  }
+  
+  .education-section h2 {
+    font-size: 2rem;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 8px;
+    margin-bottom: 20px;
+    animation: fadeInDown 0.8s ease forwards;
+  }
+  
+  .education-item {
+    background: #f9f9f9;
+    padding: 18px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+    animation: fadeInUp 0.8s ease forwards;
+  }
+  
+  .education-item h3 {
+    margin: 0;
+    font-weight: 600;
+    color: #34495e;
+  }
+  
+  .institution {
+    font-style: italic;
+    color: #7f8c8d;
+    margin: 6px 0;
+  }
+  
+  .duration {
+    font-weight: 500;
+    color: #2980b9;
+    margin-bottom: 10px;
+  }
+  
+  .details {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: #2c3e50;
+  }
+  
+  /* Simple fade animations */
+  @keyframes fadeInDown {
+    0% {opacity: 0; transform: translateY(-20px);}
+    100% {opacity: 1; transform: translateY(0);}
+  }
+  
+  @keyframes fadeInUp {
+    0% {opacity: 0; transform: translateY(20px);}
+    100% {opacity: 1; transform: translateY(0);}
+  }
+  

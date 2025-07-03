@@ -1,0 +1,26 @@
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  width: 100vw;  /* Full viewport width */
+  background-color: #222831; /* Optional: match your dark theme */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999; /* Ensure it's on top of everything */
+}
+
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 6px solid #f3f3f3; /* Light grey */
+  border-top: 6px solid #00adb5; /* Your theme's teal color */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
