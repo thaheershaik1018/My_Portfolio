@@ -84,7 +84,7 @@ const EmploymentHistory = () => {
   return (
     <section className="employment-history-section">
       <h2>Employment History</h2>
-      <p className="employment-note">All roles held at Mu Sigma, Bangalore from April 2023 to Present</p>
+      <p className="employment-note">All roles held at Mu Sigma, Bangalore from July 2023 to Present</p>
       <div className="timeline">
         {employmentData.map(({ role, company, duration, responsibilities }, idx) => (
           <div className="timeline-entry" key={idx}>

@@ -9,7 +9,7 @@ const Footer = () => {
       <p>
        Built rapidly with ❤️ using React and AI Tools for Development |{" "}
         <a
-          href="https://github.com/thaheershaik1018/_portfolio"
+          href="https://github.com/thaheershaik1018/My_Portfolio"
           target="_blank"
           rel="noopener noreferrer"
         >
