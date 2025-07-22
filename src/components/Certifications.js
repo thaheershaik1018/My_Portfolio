@@ -13,6 +13,12 @@ const certifications = [
     date: "",
     credential: "https://learn.microsoft.com/api/achievements/share/en-us/ThaheerShaik-7702/3A4U3K9H?sharingId=62D1F2944CBE5178",
   },
+
+  {
+    title: "Introduction To Machine Learning Concepts",
+    date: "",
+    credential: "https://learn.microsoft.com/api/achievements/share/en-us/ThaheerShaik-7702/FMG98JPX?sharingId=62D1F2944CBE5178",
+  },
   
 ];
 

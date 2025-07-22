@@ -9,6 +9,8 @@ const skillsData = [
       "Azure Storage Account",
       "Azure SQL",
       "Azure Data Lake Storage (ADLS)",
+      "Azure Functions",
+      "Databricks SQL",
       "Azure Databricks",
       "Azure Devops",
       "Azure Entra ID",
@@ -17,6 +19,10 @@ const skillsData = [
       "Delta Lake",
       "Azure Key Vault",
       "Databricks Mosiac Ai",
+      'Linear Regression',
+      'Logistic Regression',
+      'Decision Trees',
+      
     ],
   },
   {
@@ -37,8 +43,9 @@ const skillsData = [
   {
     category: "Soft Skills & Leadership",
     skills: [
-      "Mentor Ship",
+  
       "Team Management",
+      "Mentor Ship",
       "Ability to Multitask",
       "Fast Learner",
       "Communication Skills",
