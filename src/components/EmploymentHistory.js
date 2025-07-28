@@ -3,19 +3,30 @@ import "../styles/EmploymentHistory.css";
 
 const employmentData = [
   {
-    role: "Data Engineer",
+    
+    role: "TDS 2 - Decision Scientist",
     company: "Mu Sigma, Bangalore",
-    duration: " Dec 2024 - Present",
+    duration: " Mar 2025 - Present",
     responsibilities: [
-      "Working as a Data Engineer for one of the world’s largest petroleum refinery clients, responsible for ingesting data from multiple sources using Azure Data Factory.",
+      "Developed a predictive ML model using Python to estimate EUR for oil & gas wells, leveraging XGBoost, Random Forest, and spatial features via Geopy.",  
+      "Deployed a Flask-based web app with Docker and Heroku, enabling real-time predictions through an interactive UI.",   
+      "Automated CI/CD with GitLab, reducing EUR estimation from months to minutes through seamless updates and containerized delivery."
+]
+  },
+  {
+    role: "TDS 2 - Data Engineer",
+    company: "Mu Sigma, Bangalore",
+    duration: " Sep 2024 - Mar 2025",
+    responsibilities: [
+      "Worked as a Data Engineer for one of the world’s largest petroleum refinery clients, responsible for ingesting data from multiple sources using Azure Data Factory.",
       "Designed and developed transformation pipelines using Azure Databricks and implemented the medallion architecture to organize and store data efficiently in centralized data layers",
       "Hands-on experience with data pipeline orchestration, notebook development, and integration with Delta Lake for scalable and reliable analytics",
     ]
   },
   {
-    role: "Backend Developer",
+    role: "TDS 1 - Backend Developer",
     company: "Mu Sigma, Bangalore",
-    duration: "Feb 2024 - Nov 2024",
+    duration: "Nov 2023 - Aug 2024",
     responsibilities: [
    "Worked as a Backend Developer on internal Biz Apps (Employee Management), building RESTful APIs using Node.js and JavaScript.",
 "Designed the database schema in PostgreSQL, created views and stored procedures to support business logic.",
@@ -26,7 +37,7 @@ const employmentData = [
   {
     role: "Trainee Decision Scientist Intern",
     company: "Mu Sigma, Bangalore",
-    duration: "July 2023 - Jan 2024",
+    duration: "July 2023 - Oct 2023",
     responsibilities: [
      "Built predictive models for customer churn using ML algorithms like Random Forest and SVM, following thorough data cleaning, preprocessing, and feature engineering.",
     "Evaluated model performance with AUC and ROC metrics, and collaborated with the team to derive actionable business insights."
@@ -36,10 +47,23 @@ const employmentData = [
 ];
 
 const projectsData = [
+   {
+    name: "Enhancing Oil & Gas Well Forecasting with EUR Prediction",
+    company: "Petroleum Refinery Client",
+    period: "Mar 2025 - present",
+    details: [
+   "Designed and implemented a predictive model using Python and ML algorithms to forecast Estimated Ultimate Recovery (EUR) for oil and gas wells.",
+"Performed data preprocessing, spatial feature enrichment using Geopy, and applied thresholds to key features for better segmentation.",
+"Trained and evaluated multiple regression models including XGBoost, Random Forest, and Linear Regression using MSE and other performance metrics.",
+"Built a Flask-based web application to allow users to interact with the model through a simple interface for predictions.",
+"Containerized the app with Docker and deployed it to Heroku via GitLab CI/CD, enabling automated builds and seamless updates.",
+"Transformed the EUR estimation process from a manual months-long effort to an automated solution delivering results in minutes."
+    ]
+  },
   {
     name: "Data Subscription Usage Analysis",
     company: "Petroleum Refinery Client",
-    period: "Dec 2024 - Present",
+    period: "Sep 2024 - Mar 2025",
     details: [
     "Gained domain knowledge of the oil and gas industry while working on large-scale data engineering projects.",
     "Hands-on experience with Azure Data Factory (ADF) for data ingestion and orchestration.",
@@ -54,7 +78,7 @@ const projectsData = [
   },
   {
     name: "BIZ APP Migration – Internal Client",
-    period: "Feb 2024 – Nov 2024",
+    period: "Nov 2023 – Aug 2024",
     details: [
     "Worked as a Backend Developer for building internal Biz Apps (Employee Management Applications).",
     "Developed RESTful APIs using Node.js and JavaScript to handle business logic and employee-related operations.",
@@ -68,7 +92,7 @@ const projectsData = [
   ,
   {
     name: "Customer Chrun Prediction - Intern Project",
-    period: "July 2023- Feb 2024",
+    period: "July 2023- Oct 2023",
     details: [
     "Conducted comprehensive data cleaning and preprocessing on a customer churn dataset sourced from the organization during internship, ensuring data integrity and reliability for analysis.",
     "Employed advanced feature engineering techniques to extract meaningful insights from the dataset, enhancing model performance and predictive accuracy.",
@@ -103,7 +127,7 @@ const EmploymentHistory = () => {
       </div>
 
       <h2>Key Projects</h2>
-      <h4>Have worked on Mutiple Projects as Data Engineer,Backend Developer,Trainee Decision Scientist .</h4>
+      <h4>Have worked on Mutiple Projects as Decision Scientist, Data Engineer, Backend Developer .</h4>
       {projectsData.map(({ name, company, period, details }, idx) => (
         <div className="project" key={idx}>
           <h4 className="project-name">{name}</h4>

@@ -6,7 +6,7 @@ const Header = () => {
     <header className="header">
       <div className="header-text">
         <h1 className="name">Shaik Mohammad Thaheer</h1>
-        <h3 className="title">CLOUD / AZURE / ETL & ANALYTICS - DATA ENGINEER</h3>
+        <h3 className="title">CLOUD / AZURE / ETL & ANALYTICS - DATA ENGINEER | Decision Scientist</h3>
 
         <p className="contact">
           📍 Bangalore | 📞 +91 8639472276 | 📧{" "}
