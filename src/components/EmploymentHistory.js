@@ -6,7 +6,7 @@ const employmentData = [
     
     role: "TDS 2 - Decision Scientist",
     company: "Mu Sigma, Bangalore",
-    duration: " Mar 2025 - Present",
+    duration: " Jan 2025 - July 2025",
     responsibilities: [
       "Developed a predictive ML model using Python to estimate EUR for oil & gas wells, leveraging XGBoost, Random Forest, and spatial features via Geopy.",  
       "Deployed a Flask-based web app with Docker and Heroku, enabling real-time predictions through an interactive UI.",   
@@ -14,9 +14,9 @@ const employmentData = [
 ]
   },
   {
-    role: "TDS 2 - Data Engineer",
+    role: "TDS 1 - Data Engineer",
     company: "Mu Sigma, Bangalore",
-    duration: " Sep 2024 - Mar 2025",
+    duration: " July 2023 - Dec 2024",
     responsibilities: [
       "Worked as a Data Engineer for one of the world’s largest petroleum refinery clients, responsible for ingesting data from multiple sources using Azure Data Factory.",
       "Designed and developed transformation pipelines using Azure Databricks and implemented the medallion architecture to organize and store data efficiently in centralized data layers",
@@ -26,7 +26,7 @@ const employmentData = [
   {
     role: "TDS 1 - Backend Developer",
     company: "Mu Sigma, Bangalore",
-    duration: "Nov 2023 - Aug 2024",
+    duration: "Jult 2023 - Dec 2024",
     responsibilities: [
    "Worked as a Backend Developer on internal Biz Apps (Employee Management), building RESTful APIs using Node.js and JavaScript.",
 "Designed the database schema in PostgreSQL, created views and stored procedures to support business logic.",
@@ -35,9 +35,9 @@ const employmentData = [
   },
   
   {
-    role: "Trainee Decision Scientist Intern",
+    role: "TDS 1 - Decision Scientist ",
     company: "Mu Sigma, Bangalore",
-    duration: "July 2023 - Oct 2023",
+    duration: "July 2023 - Dec 2024",
     responsibilities: [
      "Built predictive models for customer churn using ML algorithms like Random Forest and SVM, following thorough data cleaning, preprocessing, and feature engineering.",
     "Evaluated model performance with AUC and ROC metrics, and collaborated with the team to derive actionable business insights."
@@ -91,7 +91,7 @@ const projectsData = [
   }
   ,
   {
-    name: "Customer Chrun Prediction - Intern Project",
+    name: "Customer Churn Prediction - Training Project",
     period: "July 2023- Oct 2023",
     details: [
     "Conducted comprehensive data cleaning and preprocessing on a customer churn dataset sourced from the organization during internship, ensuring data integrity and reliability for analysis.",
